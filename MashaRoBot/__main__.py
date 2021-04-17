@@ -346,7 +346,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *MIZUHARA*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -381,7 +381,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *MASHA*
+            text=""" Hi..🤗 I'm *MIZUHARA*
                  \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
@@ -677,7 +677,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "baby i am arrived😃")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
